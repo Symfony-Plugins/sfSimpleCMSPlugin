@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfSimpleCMSPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Simple Content Management System (CMS) for symfony</summary>
+ <description>This plugin allows you to add a simple Content Management System (CMS) to your symfony application with the following features:
+  - Uses Javascript and Ajax to provide a neat user experience
+  - Edit zones in pages
+  - Edit page URL (you can use / in page path)
+  - Edit content in the real context ('edit in place')
+  - Preview result
+  - Create and manage a tree structure for pages
+  - i18n ready (the interface is translated)
+  - l10n ready (a page can have different versions)
+  - support multiple templates
+  - Basic publication workflow
+  - Breadcrumb navigation  
+  - User management is controlled through [wiki:sfGuardPlugin]
+ </description>
+ <lead>
+  <name>Francois Zaninotto</name>
+  <user>fzaninotto</user>
+  <email>francois.zaninotto@symfony-project.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-02-28</date>
+ <version>
+   <release>0.7.3</release>
+   <api>0.7.3</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+    <file name="LICENSE" role="data"/>
+    <file name="README" role="data"/>
+    <dir name="config">
+      <file name="app.yml.sample" role="data"/>
+      <file name="config.php" role="data"/>
+      <file name="schema.yml" role="data"/>
+    </dir>
+    <dir name="data">
+      <dir name="fixtures">
+        <file name="test_data.yml" role="data"/>
+      </dir>
+    </dir>
+    <dir name="lib">
+      <dir name="helper">
+        <file name="sfSimpleCMSHelper.php" role="data"/>
+      </dir>
+      <dir name="model">
+        <dir name="map">
+          <file name="sfSimpleCMSSlotMapBuilder.php" role="data"/>
+          <file name="sfSimpleCMSPageMapBuilder.php" role="data"/>
+        </dir>
+        <dir name="om">
+          <file name="BasesfSimpleCMSPage.php" role="data"/>
+          <file name="BasesfSimpleCMSPagePeer.php" role="data"/>
+          <file name="BasesfSimpleCMSSlot.php" role="data"/>
+          <file name="BasesfSimpleCMSSlotPeer.php" role="data"/>
+        </dir>
+        <file name="sfSimpleCMSPage.php" role="data"/>
+        <file name="sfSimpleCMSPagePeer.php" role="data"/>
+        <file name="sfSimpleCMSSlot.php" role="data"/>
+        <file name="sfSimpleCMSSlotPeer.php" role="data"/>
+      </dir>
+      <dir name="slotType">
+        <file name="sfSimpleCMSSlotImage.class.php" role="data"/>
+        <file name="sfSimpleCMSSlotModular.class.php" role="data"/>
+        <file name="sfSimpleCMSSlotPhp.class.php" role="data"/>
+        <file name="sfSimpleCMSSlotRichText.class.php" role="data"/>
+        <file name="sfSimpleCMSSlotText.class.php" role="data"/>
+        <file name="sfSimpleCMSSlotTypeInterface.php" role="data"/>
+      </dir>
+      <file name="sfSimpleCMSTools.class.php" role="data"/>
+    </dir>
+    <dir name="modules">
+      <dir name="sfSimpleCMS">
+        <dir name="actions">
+          <file name="actions.class.php" role="data"/>
+          <file name="components.class.php" role="data"/>
+        </dir>
+        <dir name="i18n">
+          <file name="messages.it.xml" role="data"/>
+        </dir>
+        <dir name="lib">
+          <file name="BasesfSimpleCMSActions.class.php" role="data"/>
+          <file name="BasesfSimpleCMSComponents.class.php" role="data"/>
+        </dir>
+        <dir name="templates">
+          <file name="homeTemplate.php" role="data"/>
+          <file name="layout.php" role="data"/>
+          <file name="simplePageTemplate.php" role="data"/>
+          <file name="_breadcrumb.php" role="data"/>
+          <file name="_editorTools.php" role="data"/>
+          <file name="_embed.php" role="data"/>
+          <file name="_latestPages.php" role="data"/>
+          <file name="_mainNavigation.php" role="data"/>
+        </dir>
+        <dir name="validate">
+          <file name="create.yml" role="data"/>
+          <file name="update.yml" role="data"/>
+        </dir>
+      </dir>
+      <dir name="sfSimpleCMSAdmin">
+        <dir name="actions">
+          <file name="actions.class.php" role="data"/>
+        </dir>
+        <dir name="config">
+          <file name="generator.yml" role="data"/>
+        </dir>
+        <dir name="i18n">
+          <file name="messages.it.xml" role="data"/>
+        </dir>
+        <dir name="lib">
+          <file name="BasesfSimpleCMSAdminActions.class.php" role="data"/>
+        </dir>
+        <dir name="templates">
+          <file name="_is_published.php" role="data"/>
+          <file name="_list_footer.php" role="data"/>
+          <file name="_localizations.php" role="data"/>
+        </dir>
+        <dir name="validate">
+          <file name="addPage.yml" role="data"/>
+        </dir>
+      </dir>
+    </dir>
+    <dir name="web">
+      <dir name="css">
+        <file name="CMSEditorTools.css" role="data"/>
+        <file name="CMSTemplates.css" role="data"/>
+      </dir>
+      <dir name="images">
+        <file name="application_form_edit.png" role="data"/>
+        <file name="bullet_toggle_minus.png" role="data"/>
+        <file name="bullet_toggle_plus.png" role="data"/>
+        <file name="cms_toolbox_bg.gif" role="data"/>
+        <file name="cms_toolbox_bg1.gif" role="data"/>
+        <file name="cms_toolbox_header_bg.gif" role="data"/>
+        <file name="page_white_edit.png" role="data"/>
+        <file name="page_white_magnify.png" role="data"/>
+        <file name="page_white_text.png" role="data"/>
+        <file name="tab_right.png" role="data"/>
+        <file name="symfony_button.gif" role="data"/>
+        <file name="head_bg.gif" role="data"/>
+        <file name="nav_bg.gif" role="data"/>
+        <file name="nav-item_bg.gif" role="data"/>
+        <file name="coffee_machine.png" role="data"/>
+      </dir>
+      <dir name="js">
+        <file name="cookies_handler.js" role="data"/>
+        <file name="editorTools.js" role="data"/>
+        <file name="tiny_mce_AJAX.js" role="data"/>
+      </dir>
+    </dir>
+  </dir>
+ </contents>
+
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.0.0</min>
+    <max>1.1.0</max>
+    <exclude>1.1.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+
+ <phprelease>
+ </phprelease>
+
+ <changelog>
+ </changelog>
+</package>

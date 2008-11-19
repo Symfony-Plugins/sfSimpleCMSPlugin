@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit>
+        <source>List of Pages</source>
+        <target>Lista di tutte le pagine</target>
+      </trans-unit>    
+      <trans-unit>
+        <source>Path</source>
+        <target>Percorso</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Template</source>
+        <target>Template</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Localizations</source>
+        <target>Localizzazioni</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Is published</source>
+        <target>Pubblicato</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Created at</source>
+        <target>Creato il</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Updated at</source>
+        <target>Aggiornato il</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Actions</source>
+        <target>Azioni</target>
+      </trans-unit>
+      <trans-unit>
+        <source>filters</source>
+        <target>filtri di ricerca</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Path:</source>
+        <target>Percorso:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Template:</source>
+        <target>Template:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reset</source>
+        <target>azzera</target>
+      </trans-unit>
+      <trans-unit>
+        <source>filter</source>
+        <target>cerca</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Create new page</source>
+        <target>Crea una nuova pagina</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Position</source>
+        <target>Posizione</target>
+      </trans-unit>
+      <trans-unit>
+        <source>After</source>
+        <target>Dopo</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Under</source>
+        <target>Sotto</target>
+      </trans-unit>
+      <trans-unit>
+        <source>create</source>
+        <target>crea</target>
+      </trans-unit>
+      <trans-unit>
+        <source>View</source>
+        <target>Visualizza</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
